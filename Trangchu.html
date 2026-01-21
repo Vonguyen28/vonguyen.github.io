@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Báo Tường Tri Ân</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- OVERLAY -->
+<div class="overlay" id="introBox">
+    <div class="intro-modal">
+
+        <!-- Nút đóng -->
+        <span class="close-btn" onclick="closeIntro()">✕</span>
+
+        <h2>🌸 Thành viên thực hiện báo tường 🌸</h2>
+
+        <!-- Thành viên -->
+        <div class="member">
+            <img src="logo/2.jpg" alt="Nguyên">
+            <div class="member-info">
+                <p><b>Họ tên:</b> Võ Chí Nguyên</p>
+                <p><b>Ngày sinh:</b> 28/09/2008</p>
+                <p><b>Lớp:</b> 12b3</p>
+                <p><b>Nhiệm vụ:</b> Trưởng nhóm</p>
+            </div>
+        </div>
+
+        <div class="member">
+            <img src="logo/3.jpg" alt="Phương">
+            <div class="member-info">
+                <p><b>Họ tên:</b> Lê Thị Thu Phương</p>
+                <p><b>Ngày sinh:</b> 4/6/2007</p>
+                <p><b>Lớp:</b> 10A1</p>
+                <p><b>Nhiệm vụ:</b> Biên soạn nội dung</p>
+            </div>
+        </div>
+
+        <div class="member">
+            <img src="logo/4.jpg" alt="Hằng">
+            <div class="member-info">
+                <p><b>Họ tên:</b> Phạm Ngọc Hằng</p>
+                <p><b>Ngày sinh:</b> 25/10/2008</p>
+                <p><b>Lớp:</b> 12b3</p>
+                <p><b>Nhiệm vụ:</b> Tìm kiếm hình ảnh</p>
+            </div>
+        </div>
+        
+        <div class="member">
+            <img src="logo/5.jpg" alt="Thảo">
+            <div class="member-info">
+                <p><b>Họ tên:</b> Trần Hoàng Thanh Thảo</p>
+                <p><b>Ngày sinh:</b> 12/03/2008</p>
+                <p><b>Lớp:</b> 12b3</p>
+                <p><b>Nhiệm vụ:</b> Biên soạn nội dung</p>
+            </div>
+            </div>
+
+    </div>
+</div>
+
+<!-- SCRIPT OVERLAY -->
+<script>
+function closeIntro() {
+    document.getElementById("introBox").style.display = "none";
+    sessionStorage.setItem("introClosed", "true");
+}
+
+window.onload = function () {
+    if (sessionStorage.getItem("introClosed")) {
+        document.getElementById("introBox").style.display = "none";
+    }
+};
+</script>
+
+<!-- Header -->
+<header class="top-header">
+    <div class="logo-area">
+        <img src="logo/1.jpg" alt="Logo">
+              <h1>Báo Tường </h1>
+    </div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Tìm kiếm...">
+        <button>Tìm</button>
+    </div>
+</header>
+
+<!-- MENU TÁCH RIÊNG -->
+<nav class="menu-bar">
+    <a href="Trangchu.html">Trang Chủ</a>
+    <a href="Baiviet.html">Bài Viết</a>
+    <a href="Video.html">Video</a>
+</nav>
+<!-- Body -->
+<section class="baotuong-section">
+    <h2 class="section-title"></h2>
+
+    <div class="content-wrapper">
+        <!-- CỘT TRÁI -->
+        <div class="left-content">
+            <h3 class="column-title">Báo Tường Là Gì?</h3>
+
+            <img src="img/dac biet.jpg" alt="Báo tường đạt giải" class="main-image">
+
+            <p><b>
+                Báo tường (hay bích báo) là một ấn phẩm truyền thông nội bộ làm thủ công trên giấy khổ lớn (thường là A0), được dán hoặc treo trên tường để truyền tải thông tin, thể hiện tình cảm hoặc kỷ niệm trong trường học, cơ quan, tổ chức, đặc biệt phổ biến trong dịp 20/11 để tri ân thầy cô giáo. Nội dung phong phú gồm bài viết, thơ, truyện ngắn, tranh vẽ, lời chúc... được thiết kế sáng tạo, vừa là kênh thông tin vừa là hoạt động tập thể, gắn kết. 
+            </p></b>
+        </div>
+
+        <!-- THANH NGĂN -->
+        <div class="divider"></div>
+
+        <!-- CỘT PHẢI -->
+        <div class="right-content">
+    <h3 class="column-title">Bài Viết – Nổi Bật</h3>
+
+    <a href="Baiviet.html#bv1" class="post-link">
+        <div class="post">
+            <img src="img/1.jpg">
+            <span>1. Nâng Cánh Ước Mơ</span>
+        </div>
+    </a>
+
+    <a href="Baiviet.html#bv2" class="post-link">
+        <div class="post">
+            <img src="img/2.jpg">
+            <span>2. Mặt Trời Trên Bục Giảng</span>
+        </div>
+    </a>
+
+    <a href="Baiviet.html#bv3" class="post-link">
+        <div class="post">
+            <img src="img/3.jpg">
+            <span>3. Nguồn Sáng</span>
+        </div>
+    </a>
+</div>
+
+            <!-- các bài còn lại -->
+        </div>
+    </div>
+</section>
+
+   <!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- GIỚI THIỆU -->
+        <div class="footer-box">
+            <h3>Giới Thiệu</h3>
+            <p>
+                - Báo Tường Tri Ân là nơi lưu giữ những bài viết, hình ảnh và
+                kỷ niệm đẹp của tuổi học trò. Trang báo mang ý nghĩa tri ân
+                thầy cô, tôn vinh truyền thống “Tôn sư trọng đạo” và tinh
+                thần đoàn kết của học sinh.
+            </p>
+        </div>
+
+        <!-- CHUYÊN MỤC -->
+        <div class="footer-box">
+            <h3>Chuyên Mục</h3>
+            <ul>
+                <li><a href="Trangchu.html">Trang Chủ</a></li>
+                <li><a href="Baiviet.html">Bài Viết</a></li>
+                <li><a href="Video.html">Video</a></li>
+            </ul>
+        </div>
+
+        <!-- THÔNG TIN -->
+        <div class="footer-box">
+            <h3>Thông Tin</h3>
+            <p>Chủ đề: Báo Tường 20/11</p>
+            <p>Người Thực hiện: Nguyên</p>
+            <p>Trường: TT GDNN-GDTX</p>
+            <p>Năm học: 2025 – 2026</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Báo Tường Tri Ân | Thiết kế cho mục đích học tập
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER TRÊN */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #f5f5f5;
+}
+
+/* LOGO */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-area img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-area h1 {
+    font-size: 22px;
+    color: #333;
+}
+
+/* SEARCH */
+.search-box {
+    display: flex;
+    gap: 5px;
+}
+
+.search-box input {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-box button {
+    padding: 6px 12px;
+    border: none;
+    background: #0077cc;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* MENU RIÊNG */
+.menu-bar {
+    background: #0077cc;
+    padding: 10px 30px;
+}
+
+.menu-bar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+.menu-bar a:hover {
+    text-decoration: underline;
+}
+/* ===== BÁO TƯỜNG ĐẠT GIẢI ===== */
+.baotuong-section {
+    padding: 40px 60px;
+    background: #ffffff;
+}
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #ff0606;
+}
+
+/* BỐ CỤC 2 CỘT */
+.content-wrapper {
+    display: flex;
+}
+
+/* CỘT TRÁI */
+.left-content {
+    width: 55%;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.left-content p {
+    line-height: 1.6;
+    color: #444;
+    font-size: 20px;
+}
+
+/* THANH NGĂN */
+.divider {
+    width: 2px;
+    background: #ddd;
+    margin: 0 25px;
+}
+
+/* CỘT PHẢI */
+    .post span {
+    font-size: 20px;
+    color: #333;
+}
+/* TIÊU ĐỀ CỘT TRÁI & PHẢI GIỐNG NHAU */
+.column-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #0077cc;
+    color: #0077cc;
+    text-transform: uppercase;
+}
+
+
+.right-content {
+    width: 40%;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.post img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.post span {
+    font-size: 15px;
+    color: #333;
+}
+/* ===== FOOTER ===== */
+.footer {
+    background: #1f2933;
+    color: #e5e7eb;
+    padding-top: 30px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px 30px;
+}
+
+.footer-box {
+    width: 30%;
+}
+
+.footer-box h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.footer-box p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 8px;
+}
+
+.footer-box ul li a {
+    color: #e5e7eb;
+    text-decoration: none;
+}
+
+.footer-box ul li a:hover {
+    text-decoration: underline;
+}
+
+/* DÒNG CUỐI */
+.footer-bottom {
+    text-align: center;
+    background: #111827;
+    padding: 12px;
+    font-size: 14px;
+}
+.baiviet-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.baiviet-row img {
+    width: 20%;
+    border-radius: 6px;
+}
+
+.baiviet-row p {    
+    margin: 0;
+    line-height: 1.7;
+    font-size: 30px;
+}
+.baiviet-item {
+    margin-bottom: 35px;   /* tạo khoảng cách giữa các bài */
+}
+
+.baiviet-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+/* ===== VIDEO ===== */
+.video-section {
+    padding: 40px 60px;
+}
+
+.video-item {
+    margin-bottom: 35px;
+}
+
+.video-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* VIDEO TRÁI */
+.video-row video {
+    width: 280px;      /* BẠN CÓ THỂ TĂNG / GIẢM */
+    border-radius: 6px;
+}
+/* ===== OVERLAY ===== */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* ===== MODAL ===== */
+.intro-modal {
+    background: #fff;
+    width: 80%;
+    max-width: 700px;
+    max-height: 85vh;
+    padding: 25px;
+    border-radius: 18px;
+    position: relative;
+    overflow-y: auto;
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.85); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #555;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+.intro-modal h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #b51515;
+}
+
+/* ===== MEMBER ===== */
+.member {
+    display: flex;
+    gap: 15px;
+    padding: 12px;
+    border-radius: 12px;
+    background: #f7f7f7;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.member img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #b51515;
+}
+
+.member-info p {
+    margin: 3px 0;
+    font-size: 14px;
+}
+
+.intro-modal::-webkit-scrollbar {
+    width: 6px;
+}
+.intro-modal::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .intro-modal {
+        width: 90%;
+    }
+
+    .member {
+        flex-direction: column;
+        text-align: center;
+    }
+}
